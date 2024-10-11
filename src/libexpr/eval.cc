@@ -1519,7 +1519,7 @@ void ExprLambda::eval(EvalState & state, Env & env, Value & v)
     v.mkLambda(&env, this);
 }
 
-static const std::chrono::duration SAMPLE_INTERVAL = std::chrono::microseconds(10);
+static const std::chrono::duration SAMPLE_INTERVAL = std::chrono::microseconds(100);
 namespace {
 class SampleStack {
     EvalState & state;
